@@ -1,6 +1,10 @@
 import socket, random, threading, sys, time
+from requests import get
+from colorama import Fore, Back, Style
 
 
+hostname = socket.gethostname()
+public_ip = get('https://api.ipify.org').text
 
 try:
     target = str(sys.argv[1])
@@ -20,9 +24,12 @@ def attack():
         return
         sys.exit()
 
-
-print("\n[+] Starting Attack..")
+print(Fore.YELLOW"Hostname: ", hostname)
+print(Fore.PINK"Public IP: ", public_ip)
+print("")
+print("")
+print(Fore.GREEN"\n[+] Starting Attack..")
 for x in range(0, threads):
     threading.Thread(target=attack).start()
 
-print("Attack done!")
+print(Fore.CYAN"Attack done!")
