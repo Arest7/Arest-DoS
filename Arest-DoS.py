@@ -24,12 +24,12 @@ def attack():
         return
         sys.exit()
 
-print(Fore.YELLOW"Hostname: ", hostname)
-print(Fore.PINK"Public IP: ", public_ip)
+print(Fore.YELLOW + "Hostname: ", hostname)
+print(Fore.PINK + "Public IP: ", public_ip)
 print("")
 print("")
-print(Fore.GREEN"\n[+] Starting Attack..")
+print(Fore.GREEN + "\n[+] Starting Attack..")
 for x in range(0, threads):
     threading.Thread(target=attack).start()
 
-print(Fore.CYAN"Attack done!")
+print(Fore.CYAN + "Attack done!")
