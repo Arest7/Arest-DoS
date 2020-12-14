@@ -32,4 +32,4 @@ print(Fore.GREEN + "\n[+] Starting Attack..")
 for x in range(0, threads):
     threading.Thread(target=attack).start()
 
-print(Fore.CYAN + "Attack done!")
+print(Fore.CYAN + "[+]Attack done!")
