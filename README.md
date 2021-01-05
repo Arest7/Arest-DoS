@@ -34,4 +34,4 @@ thank you for using my tool!
 
 Telegram: @Arestant0816
 Telegram channel: @Termux_secrets
-Github: https:github.com/Arest7
+Github: https://github.com/Arest7
